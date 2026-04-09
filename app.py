@@ -82,9 +82,9 @@ def run_scraper(max_pages=10, progress_bar=None, status_text=None):
 
 # --- Streamlitの画面構成 ---
 st.title("求人リスト取得アプリ")
-st.write("リクナビNEXTから東京のエンジニア求人企業名を取得します（最大10ページ）。")
+st.write("リクナビNEXTから東京のエンジニア求人企業名を取得します（最大20ページ）。")
 
-max_pages = st.slider("取得するページ数", min_value=1, max_value=10, value=10)
+max_pages = st.slider("取得するページ数", min_value=1, max_value=20, value=20)
 
 if st.button("スクレイピング開始"):
     progress_bar = st.progress(0)

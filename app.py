@@ -49,7 +49,7 @@ def run_scraper(max_pages=10, progress_bar=None, status_text=None):
                 continue
             
             driver.execute_script("window.scrollTo(0, 1000);")
-            time.sleep(2)
+            time.sleep(5)
             
             elements = driver.find_elements(By.CSS_SELECTOR, "span[class*='employerNameBase']")
             
